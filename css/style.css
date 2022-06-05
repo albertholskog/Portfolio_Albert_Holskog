@@ -5,3 +5,114 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --coler-dark: #4d194d;
+  --coler-light: #006466;
+}
+h1,
+h2,
+h3,
+p,
+span,
+a {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: rgb(231, 225, 225);
+}
+a {
+  text-decoration: none;
+  color: #006466;
+  font-size: 1.2rem;
+}
+header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(23, 21, 21);
+}
+h1 {
+  text-align: center;
+  color: rgb(220, 216, 216);
+  font-size: 2rem;
+}
+
+.biografi {
+  margin: 40px auto;
+  max-width: 600px;
+  border: 2px solid var(--coler-dark);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(147, 139, 139);
+}
+h2 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.span {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+span {
+  margin: 10px;
+  font-size: 1.3rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 4px;
+  color: var(--coler-light);
+}
+
+img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+}
+.card {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(147, 139, 139);
+}
+.card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.card p {
+  max-width: 400px;
+}
+footer {
+  background-color: rgb(23, 21, 21);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: grid;
+  gap: 10px;
+  place-content: center;
+  margin-bottom: 5vh;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "one "
+    "two"
+    "three";
+}
+.card-container :nth-child(1) {
+  grid-area: one;
+}
+.card-container :nth-child(2) {
+  grid-area: two;
+}
+.card-container :nth-child(3) {
+  grid-area: three;
+}
