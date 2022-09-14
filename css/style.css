@@ -124,7 +124,7 @@ img {
   }
   aside {
     position: sticky;
-    top: 100px;
+    top: 0;
     align-self: start;
     padding: 20px;
     border-radius: 10px;
